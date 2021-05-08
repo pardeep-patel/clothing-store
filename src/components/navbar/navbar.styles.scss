@@ -1,0 +1,84 @@
+$sm:600px;
+$md:960px;
+
+.appBar{
+	box-shadow: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+}
+
+.title {
+	flex-grow: 1;
+	align-items: center;
+	display: flex;
+	text-decoration: none;
+}
+
+.image {
+	margin-right: 10px;
+}
+
+.menuButton {
+	margin-right: 16px;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.search {
+	position: relative;
+	border-radius: 50%;
+	background-color: fade(#a6d4fa, 0.15);
+	
+	&:hover{
+		background-color: fade(#a6d4fa, 0.25);
+	}
+
+	margin-right: 16px;
+	margin-left: 0;
+	width: 100%;
+
+}
+
+.searchIcon {
+	padding: 0 16px;
+	height: 100%;
+	position: absolute;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputRoot {
+	color: inherit;
+}
+
+.inputInput {
+	padding: 1, 1, 1, 0;
+	padding-left: 2em;
+	width: 100%;
+
+}
+
+@media screen and (max-width:$sm){
+	.appBar{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.menuButton{
+		display:none;
+	}
+	
+	.search{
+		width:auto;
+	}
+}
+
+@media screen and (max-width:$md){
+	.inputInput{
+		width:20ch;
+	}
+}

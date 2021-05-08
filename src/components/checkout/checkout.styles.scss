@@ -1,0 +1,61 @@
+.toolbar{
+	min-height:64px;
+}
+
+.layout {
+	margin-top:5%;
+	width:auto;
+	margin-left:16px;
+	margin-right:16px;
+}
+
+
+
+.paper{
+	margin-top:24px;
+	margin-bottom:24px;
+	padding:16px;
+
+}
+
+.stepper{
+	padding: 3, 0, 5, 0;
+}
+
+.buttons{
+	display:flex;
+	justify-content:flex-end;
+}
+
+.button{
+	margin-top:24px;
+	margin-left:8px;
+}
+
+.divider{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .paper{
+	width:100%;
+	margin-top:60px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .layout{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+  }
+  
+  .paper{
+	margin-top:48px;
+	margin-bottom:48px;
+	padding:24px;
+  }
+}
